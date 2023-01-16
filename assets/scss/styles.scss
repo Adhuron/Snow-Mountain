@@ -1,0 +1,35 @@
+// colors
+$cwhite: white;
+$cgrey:#8eb2c7;
+$bcorange: #efa758;
+
+
+.intro-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        img{}
+        nav{}
+        ul{
+            display: flex;
+        }
+        li{
+            color: $cwhite;
+            margin: 10px;
+            list-style: none;
+            font-size: 14px;
+
+        }
+        .button{
+            background-color: $bcorange;
+            border: none;
+            border-radius: px;
+        }
+    }
+}

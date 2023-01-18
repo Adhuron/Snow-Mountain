@@ -9,21 +9,28 @@
 </head>
 <body>
     <!-- INTRO -->
-    <section class="intro-wrapper" style="background-image: url(/assets/images/skiing2.jpg);">
+    <section class="intro-wrapper" style="background-image: url(/assets/images/mountain2.jpg); width: 100%; height: 100vh;">
         <header>
-            <img src="assets/images/header-logo.webp" alt="snow-mountain">
+            <div class="header-wrapper">
+                <img src="assets/images/header-logo.webp" alt="snow-mountain">
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>FEATURES</li>
-                    <li>SERVICES</li>
-                    <li>ABOUT US</li>
-                    <li>CONTACTS</li>
-                    <li><input class="button" type="button" value="BOOK YOUR STAY"></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a> </li>
+                    <li><a href="#">SERVICES</a> </li>
+                    <li><a href="#">ABOUT US</a> </li>
+                    <li><a href="#">CONTACTS</a> </li>
+                    <li class="button-wrap">
+                        <input class="button" type="button" value="BOOK YOUR STAY">
+                    </li>
                 </ul>
             </nav>
+            </div>         
         </header>
-            <img class="freestyle-img" src="assets/images/freestyle.webp" alt="" srcset="">
+        <div class="freestyle-img">
+            <img src="assets/images/freestyle.webp" alt="" srcset="">
+        </div>
+            
     </section>
     <!-- ABOUT US -->
     <section class="about-us">
@@ -50,40 +57,49 @@
                 </form>
             </div>
             <div class="about-us-info">
-                <h6>Welcome</h6>
+                <h3>Welcome</h3>
                 <h1>About US</h1>
                 <p>We’re not saying Snow Mountain has special powers, but a lot of magical things do happen here. The slopes on Bald and Dollar mountains enjoy a nearly lift line–free existence all winter long, not to mention a nearly cloud-free one.</p>
                 <p>To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!</p>
                 <div class="info-cards">
-                    <div class="weather">
+                    <div class="weather card">
                         <img src="" alt="">
                         <a href="http://bbc/weather">WEATHER</a>
                     </div>
-                    <div class="learning">
+                    <div class="learning card">
                         <img src="" alt="">
                         <a href="http://bbc.com">LEARNING</a>
-                        <div class="terrain">
+                        </div>
+                        <div class="terrain card">
                             <img src="" alt="">
                             <a href="http://bbc/weather">TERRAIN</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-us-activity">
-                <div class="activity-card1">
+            
+            <div class="about-us-activity" style="background-image: url(assets/images/activitybg.jpg);">
+                <div class="activity-card1" >
                     <span>Your Boarding Pass Has Its Benefits.</span>
                     <span>Bonus for SEA, PDX and LAX flights passengers!</span>
                     <input type="button" value="READ MORE">
                 </div>
             </div>
+            <div class="activity-info">
+                <h1>test</h1>
+                <h1>test</h1>
+                <h1>test</h1>
+            </div>
         </div>
     </section>
     <!-- Secret-Season -->
-    <section class="secret-season">
-        <h6>Secret Season</h6>
+    <section class="secret-season" style="background-image: url(assets/images/secrest-seasonbg.jpg); height: 100vh; background-repeat: no-repeat;">
+        <div class="secret-season-wrapper">
+        <h6>Secret</h6>
         <h1><span>Save Up To 30%</span> Spring Lodging!</h1>
         <p>Insiders know that spring is the best time to bring your family to Snow Mountain. With unlimited sunshine, great snow conditions, and plenty of family-friendly activities to enjoy at both base areas, spring is the best-kept secret of the season. But hurry...with deals this good they won't stay a secret for long!</p>
-        <input type="button" value="READ MORE">
+        <input class="button" type="button" value="READ MORE">
+        </div>
+        
     </section>
     <!-- Snow Mountain -->
     <section class="snow-mountain">
@@ -108,7 +124,7 @@
                     <p>
                         When you need a place to stay that goes beyond what a hotel can offer, explore condominium and apartment vacation rental options.
                     </p>
-                    <input type="button" value="VIEW LODGING">
+                    <input class="button" type="button" value="VIEW LODGING">
                 </div>
             </div>
             <div class="card2">
@@ -120,7 +136,7 @@
                     <p>
                         Newest luxury offerings ideally located on the White Clouds golf course and within walking distance to hiking.
                     </p>
-                    <input type="button" value="VIEW LODGING">
+                    <input class="button" type="button" value="VIEW LODGING">
                 </div>
             </div>
             <div class="card3">
@@ -132,7 +148,7 @@
                     <p>
                         We’ve taken cottage beyond just quaint here, making the cottage vacation rentals at Snow Mountain into much more.
                     </p>
-                    <input type="button" value="VIEW LODGING">
+                    <input class="button" type="button" value="VIEW LODGING">
                 </div>
             </div>
         </div>
@@ -174,7 +190,7 @@
             <div class="image5"></div>
             <div class="image6"></div>
             <div class="footer">
-                <input type="button" value="MORE PHOTOS">
+                <input class="button" type="button" value="MORE PHOTOS">
             </div>
         </div>
     </section>

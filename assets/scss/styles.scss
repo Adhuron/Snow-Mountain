@@ -1,57 +1,192 @@
 // colors
 $cwhite: white;
 $cgrey:#8eb2c7;
+$cdarkgray:#505a61;
 $bcorange: #efa758;
 $blightorange: #f5b768;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway:wght@500;700&display=swap');
+$raleway:'Raleway', sans-serif;
+$kaushan:'Kaushan Script', cursive;
+.button{
+            
+    background-color: $bcorange;
+    border: none;
+    border-radius: 8px;
+    width: 190px;
+}
+
+*{
+    font-family: $raleway;
+   
+}
 
 // INTRO
 .intro-wrapper{
     width: 100%;
     height: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: rgb(219, 84, 185);
-
-    header{
+   
+    .header-wrapper{
+        position: sticky;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-top: 50px;
         img{}
-        nav{}
+        nav{
+            position: sticky;
+        }
         ul{
             display: flex;
+            align-items: center;
         }
         li{
-            color: $cwhite;
+            font-size: large;
+            
             margin: 10px;
             list-style: none;
             font-size: 14px;
-
+            a{
+                text-decoration: none;
+                color: $cwhite;
+            }
+        a:hover{
+            color:$cgrey;
+        }
         }
         .button{
             background-color: $bcorange;
-            border: none;
-            border-radius: px;
+            color: white;
+            height: 50px;
+            
         }
-        img{
+        .button:hover{
+            background-color: $cgrey;
+            transition: 1ms;
+        }
+        .button-wrap{
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        img{
+            
+        }
     }
     .freestyle-img{
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 
 // ABOUT US
 .about-us-wrapper{
-background-color: #f5b768;
-display: grid;
-grid-template-columns: 1fr 3fr;
-
-    .form-tittle{
-        background-color: $blightorange;
-        background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 0 100px 100px;
+    
+    .about-us-form{
+        grid-area: 1 / 1 / 4 / 3;
+         background-color: $bcorange;
+         border-radius: 5px;
+        .form-tittle{
+            background-color: $blightorange;
+            background-repeat: no-repeat;
+            h2{
+                margin: 0;
+                }
+        }
     }
+    .about-us-info{
+         grid-area: 1 / 3 / 4 / 6;
+         .info-cards{
+            display: flex;
+            justify-content: space-around;
+        }
+        .card{
+            width: 190px;
+            height: 155px;
+            background-color: #eaf2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #808b90;
+            a{
+                color: #808b90;
+                text-decoration: none;
+            }
+        }
+        .card:hover{
+            background-color: #505a61;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+        h3{
+            color:$bcorange;
+            font-family: $kaushan;
+            font-size: 1.5em;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: .2px;
+            line-height: 1.5em;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 3.75em;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 1.03;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin:0;
+            color: $cdarkgray;
+        }
+        p{
+            color: #808b90;
+        }
+    }
+    .about-us-activity{
+        border-radius: 5px;
+        grid-area: 4 / 1 / 7 / 4;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .activity-info{
+        grid-area: 4 / 4 / 7 / 6;
+     
+    }
+
+   
 }
+
+// SECRET SEASON
+
+    .secret-season-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        h6{
+            font-family: $kaushan;
+            color: $bcorange;}
+        h1{
+            color:black;
+            span{
+                color: $cdarkgray;
+            }
+        }
+        p{
+            color: #808b90;
+        }
+        
+    }
+   

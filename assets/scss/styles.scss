@@ -21,6 +21,27 @@ $kaushan:'Kaushan Script', cursive;
     font-family: $raleway;
    
 }
+h6{
+    font-family: $kaushan;
+    color: $bcorange;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: .2px;
+    line-height: 1.5em;
+}
+    
+h1{
+    color:black;
+    font-size: 3.75em;
+    font-weight: 900;
+    text-transform: uppercase;
+    span{
+        color:#8eb2c7;
+        margin: 0;
+        line-height: 1.2em;
+    }
+}
 
 // INTRO
 .intro-wrapper{
@@ -157,14 +178,12 @@ $kaushan:'Kaushan Script', cursive;
     }
     .about-us-activity{
         border-radius: 5px;
-        grid-area: 4 / 1 / 7 / 4;
+        grid-area: 4 / 1 / 7 / 6;
         background-repeat: no-repeat;
         background-position: center;
+        
     }
-    .activity-info{
-        grid-area: 4 / 4 / 7 / 6;
-     
-    }
+
 
    
 }
@@ -174,19 +193,121 @@ $kaushan:'Kaushan Script', cursive;
     .secret-season-wrapper{
         display: flex;
         justify-content: flex-start;
+        flex-direction: column;
         width: 50%;
-        h6{
-            font-family: $kaushan;
-            color: $bcorange;}
-        h1{
-            color:black;
-            span{
-                color: $cdarkgray;
-            }
-        }
+        margin-left: 100px !important; 
+    
         p{
             color: #808b90;
         }
+        .button{
+            background-color: $bcorange;
+            color: white;
+            height: 50px;
+            
+        }
+        .button:hover{
+            background-color: $cgrey;
+            transition: 1ms;
         
     }
+}
+
+//  SNOW MOUNTAIN 
    
+.snow-mountain-wrapper{
+   margin: 0 100px;
+
+   .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    
+   }
+ h6{
+
+ }  
+ h1{}
+ .snow-mountain-nav{
+   .nav-items{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   } 
+   .item{
+    margin-right: 10px;
+    background-color: red;
+   }
+ } 
+ .snow-mountain-cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+ }
+ .card1 .card2 .card3 {
+    display: flex;
+    flex-direction: column;
+ }
+ .card-img{
+    width: 370px;
+    height: 260px;
+ }
+}
+
+// SEASON PASSES
+.season-passes-wrapper{
+display: flex;
+align-content: flex-end;
+flex-wrap: wrap;
+flex-direction: column;
+    .season-passes-header{
+
+    }
+    .season-passes-cards{
+        display: flex;
+        .card1{
+            background-color:#efa758;
+            color: $cwhite;
+        }
+        .card2{
+            background-color: $cwhite;
+            h3{
+                color: #8eb2c7;
+            }
+            p{
+                color: #808b90;
+            }
+            h4{
+                color: #efa758;
+            }
+        }
+    }
+    .season-passes-footer{
+        p{
+            color: #808b90;
+        }
+    }
+}
+
+// GALLERY
+.gallery{
+    .gallery-header{
+
+    }
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .image1{grid-area: 1 / 1 / 3 / 2;}
+    .image2{grid-area: 3 / 1 / 6 / 2;}
+    .image3{grid-area: 1 / 2 / 4 / 3;}
+    .image4{grid-area: 4 / 2 / 6 / 3;}
+    .image5{grid-area: 1 / 3 / 3 / 4;}
+    .image6{grid-area: 3 / 3 / 6 / 4;} 
+}
+

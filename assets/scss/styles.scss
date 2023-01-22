@@ -363,12 +363,15 @@ h1{
         color:#efa758
     }
  }
- .card1 .card2 .card3 {
+ .card1, .card2, .card3 {
     display: flex;
     flex-direction: column;
+    padding:20px;
  }
  .card-img{
-    width: 370px;
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: cover !important;
     height: 260px;
  }
 }
@@ -524,7 +527,7 @@ flex-direction: column;
        
         p{
             color: #eaf2f7;
-            padding-top: 0;
+            margin: 0;
         }
         h5{
             color: #efa758;
@@ -535,6 +538,9 @@ flex-direction: column;
             color: #efa758;
             margin-left: 40px;
             margin-bottom: 40px;
+        }
+        .footer-img{
+            margin-left: 40px;
         }
         img{
             width: 77px;
@@ -563,16 +569,34 @@ flex-direction: column;
      }
   }
 
-
+  .header-mobile-nav {
+    display:none;
+  }
 
  @media only screen and (max-width: 768px) {
+
+    .header-desktop-nav{
+        display:none
+    }
+    .header-wrapper{
+        display:block !important;
+        text-align: center;
+    }
+    .header-mobile-nav {
+        display:block;
+    }
+    
+    .header-mobile-nav ul{
+        flex-direction: column;
+    }
 
     .about-us-wrapper{
         display: flex;
         flex-direction: column;
+        margin:0;
     }
     .secret-season{
-        height: auto;
+        height: auto !important;
         background-size: cover;
         padding: 20px 0;
     }
@@ -586,8 +610,53 @@ flex-direction: column;
     .gallery .gallery-container{
         display: flex;
         flex-direction: column;
+        margin: 20px;
     }
     .gallery .photo{
         width: auto;
+    }
+    .snow-mountain-wrapper .snow-mountain-nav .nav-items{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .season-passes-wrapper .wrapper{
+        width:90%;
+        padding: 0 20px;
+    }
+    .footer-cards-wrapper{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .secret-season-wrapper{
+        width: auto;
+         margin: 20px !important;
+    }
+    .testimonials-wrapper{
+        width: auto;
+        margin: 0 20px;
+    }
+    .footer-img{
+        padding-left: 40px;
+    }
+    .testimonials-wrapper .testimonials-footer h5 {
+        margin-bottom: 10px;
+    }
+    .card1, .card2, .card3{
+        margin-bottom: 20px;
+    }
+    .snow-mountain-wrapper{
+        margin: 0 20px;
+    }
+    .snow-mountain-wrapper .header{
+        text-align: center;
+    }
+    .snow-mountain-wrapper .snow-mountain-nav .item{
+        margin-bottom: 1px;
+        background-color: #eaf2f7;
+    }
+    .snow-mountain-wrapper .card-img {
+        width: auto;
+        background-size: cover !important;
+        background-repeat: no-repeat;
     }
   }

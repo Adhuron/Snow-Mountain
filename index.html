@@ -36,23 +36,42 @@
     <section class="about-us">
         <div class="about-us-wrapper">
             <div class="about-us-form">
-                <div class="form-tittle" style="background-image: url(/assets/images/form-title-bg.webp);">
-                    <h2>PLAN YOUR TRIP</h2>
-                    <a href="tel:+(123) 456-7890">(123) 456-7890</a>
+                <div class="form-tittle">
+                    <div class="tittle-text">
+                        <h2>PLAN YOUR TRIP</h2>
+                        <a class="tel" href="tel:+(123) 456-7890">(123) 456-7890</a>
+                    </div>
+                    <div class="title-img">
+                        <img src="assets/images/form-title-bg.webp" alt="">
+                    </div>
+                  
                 </div>
-                <form action="">
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" placeholder="John Doe">
-                    <label for="phone">Phone</label><br>
+                <form class="forms" action="">
+                    <div class="form-wrap">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe">
+                    </div>
+                   <div class="form-wrap">
+                    <label for="phone">Phone</label>
                     <input type="tel" name="phone" id="phone" placeholder="+38344111222">
-                    <label for="checkin">Check In</label><br>
-                    <input type="checkin" name="checkin" id="checkin">
-                    <label for="checkout">Check Out</label><br>
-                    <input type="checkout" name="checkout" id="checkout">
-                    <label for="adults">Adults</label><br>
-                    <input type="number" name="adults" id="adults">
-                    <label for="children">Children</label><br>
-                    <input type="number" name="children" id="children">
+                   </div>
+                   <div class="form-wrap">
+                    <label for="checkin">Check In</label>
+                    <input type="datetime" name="checkin" id="checkin" placeholder="Choose date">
+                   </div>
+                   <div class="form-wrap">
+                        <label for="checkout">Check Out</label>
+                    <input type="datetime" name="checkout" id="checkout" placeholder="Choose date">
+                </div>
+                   <div class="form-wrap">
+                    <label for="adults">Adults</label>
+                    <input type="number" name="adults" id="adults" placeholder="1">
+                   </div>
+                   <div class="form-wrap">
+                    <label for="children">Children</label>
+                    <input type="number" name="children" id="children" placeholder="0">
+                   </div>
+ 
                     
                 </form>
             </div>
@@ -63,21 +82,21 @@
                 <p>To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!</p>
                 <div class="info-cards">
                     <div class="weather card">
-                        <img src="" alt="">
+                        <img src="assets/images/snowflake.svg" alt="">
                         <a href="http://bbc/weather">WEATHER</a>
                     </div>
                     <div class="learning card">
-                        <img src="" alt="">
+                        <img src="assets/images/helmet.svg" alt="">
                         <a href="http://bbc.com">LEARNING</a>
                         </div>
                         <div class="terrain card">
-                            <img src="" alt="">
+                            <img src="assets/images/terrain.svg" alt="">
                             <a href="http://bbc/weather">TERRAIN</a>
                         </div>
                     </div>
                 </div>
             
-            <div class="about-us-activity" style="background-image: url(assets/images/activitybg.jpg); width: 100%;">
+            <div class="about-us-activity" style="background-image: url(assets/images/activitybg.jpg); width: 100%; background-size: cover;">
                 
                     <!-- <span>Your Boarding Pass Has Its Benefits.</span>
                     <span>Bonus for SEA, PDX and LAX flights passengers!</span>
@@ -108,11 +127,11 @@
           
             <div class="snow-mountain-nav">
                 <ul class="nav-items">
-                    <li class="item">LODGING</li>
-                    <li class="item">SPA&WELLNES</li>
-                    <li class="item">DINING</li>
-                    <li class="item">SHOPING</li>
-                    <li class="item">GROUPS&WEDDINGS</li>
+                    <li class="item"><span class="item-text">LODGING</span> </li>
+                    <li class="item"><span class="item-text">SPA&WELLNES</span> </li>
+                    <li class="item"><span class="item-text">DINING</span> </li>
+                    <li class="item"><span class="item-text">SHOPING</span> </li>
+                    <li class="item"><span class="item-text">GROUPS&WEDDINGS</span> </li>
                 </ul>
             </div>
             <div class="snow-mountain-cards">
@@ -125,7 +144,10 @@
                         <p>
                             When you need a place to stay that goes beyond what a hotel can offer, explore condominium and apartment vacation rental options.
                         </p>
+                        <div class="card-button">
                         <input class="button" type="button" value="VIEW LODGING">
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card2">
@@ -136,7 +158,10 @@
                         <p>
                             Newest luxury offerings ideally located on the White Clouds golf course and within walking distance to hiking.
                         </p>
+                        <div class="card-button">
                         <input class="button" type="button" value="VIEW LODGING">
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card3">
@@ -147,7 +172,10 @@
                         <p>
                             We’ve taken cottage beyond just quaint here, making the cottage vacation rentals at Snow Mountain into much more.
                         </p>
+                        <div class="card-button">
                         <input class="button" type="button" value="VIEW LODGING">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -156,28 +184,32 @@
     </section>
     <!-- Season Passes -->
     <section class="season-passes">
-        <div class="season-passes-wrapper" style="background-image: url(assets/images/seasonPassesbg.jpg); background-size: contain; height: 100vh;">
-            <div class="season-passes-header">
-                <h6>Season Passes</h6>
-                <h1><span>DAILY</span>TICKET RATES</h1>
-               </div> 
-               <div class="season-passes-cards">
-                <div class="card1">
-                    <h3>SEASON PASSES</h3>
-                    <p>Get access to the best skiing in Utah along with many other great perks!</p>
-                    <h4>ADULT FROM $549</h4>
-                </div>
-                <div class="card2">
-                    <h3>GO CARDS</h3>
-                    <p>Skip the ticket window and get straight to the lift when you reload online!</p>
-                    <h4>RELOAD AT HOME!</h4>
-                </div>
-               </div>
-               <div class="season-passes-footer">
-                <p>Choose what suits your style. Snow Mountain offers a variety of ticketing
-                    options to satisfy the needs of skiers of all ages and abilities.</p>
-               </div>
-        </div>
+        <div class="season-passes-wrapper" style="background-image: url(assets/images/seasonPassesbg.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+            <div class="wrapper">
+                    <h6>Season Passes</h6>
+                    <h1><span>DAILY</span> TICKET RATES</h1>          
+                   <div class="container">
+                    <div class="season-passes-cards">
+                        <div class="card1">
+                            <h3>SEASON PASSES</h3>
+                            <p>Get access to the best skiing in Utah along with many other great perks!</p>
+                            <h4>ADULT FROM $549</h4>
+                        </div>
+                        <div class="card2">
+                            <h3>GO CARDS</h3>
+                            <p>Skip the ticket window and get straight to the lift when you reload online!</p>
+                            <h4>RELOAD AT HOME!</h4>
+                        </div>
+                       </div>
+                       <div class="season-passes-footer">
+                        <p>Choose what suits your style. Snow Mountain offers a variety of ticketing
+                            options to satisfy the needs of skiers of all ages and abilities.</p>
+                       </div>
+                   </div>
+                  
+            </div>
+            </div>
+       
       
     </section>
     <!-- Gallery -->
@@ -187,53 +219,36 @@
             <h1>PHOTO OF THE DAY!</h1>
         </div>
         <div class="gallery-container">
-            <div class="image1" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="image2" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="image3" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="image4" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="image5" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="image6" style="background-image: url(assets/images/skiing1.jpg); background-size: contain;"></div>
-            <div class="footer">
-                <input class="button" type="button" value="MORE PHOTOS">
-            </div>
+            <div class="image1 photo" style="background-image: url(assets/images/skiing2.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="image2 photo" style="background-image: url(assets/images/skiing1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="image3 photo" style="background-image: url(assets/images/skiing3.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="image4 photo" style="background-image: url(assets/images/skiing1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="image5 photo" style="background-image: url(assets/images/skiing2.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="image6 photo" style="background-image: url(assets/images/skiing1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
         </div>
     </section>
     <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="testimonials-header">
-            <h6>Testimonials</h6>
-            <h1>CLIENTS ABOUT US</h1>
-        </div>
-        <div class="testimonials-content">
-            <div class="apostrophe">
-                <h1>"</h1>
+    <section class="testimonials" style="background-image: url(assets/images/testimonials-bg.jpg); background-size: cover; background-repeat: no-repeat;">
+        <div class="testimonials-wrapper">
+            <div class="testimonials-header">
+                <h6>Testimonials</h6>
+                <h1>CLIENTS ABOUT US</h1>
             </div>
-            <p>It’s a nice resort. Plenty of slopes, lifts, bars and incredible views. The town is comfortable. You can find everything you need for a good vacation. The distances are small and you can easily find your destination. It is one of the best ski resort for family, that I know!</p>
-        </div>
-        <div class="testimonials-footer">
-            <h5>Brianna Park</h5>
-            <div class="footer-img">
-                <img src="assets/images/footer-img.jpg" alt="" srcset="">
+            <div class="testimonials-content">
+                <div class="apostrophe">
+                    <img src="assets/images/apostrophe.svg" alt="">
+                </div>
+                <p>It’s a nice resort. Plenty of slopes, lifts, bars and incredible views. The town is comfortable. You can find everything you need for a good vacation. The distances are small and you can easily find your destination. It is one of the best ski resort for family, that I know!</p>
+            </div>
+            <div class="testimonials-footer">
+                <h5>Brianna Park</h5>
+                <div class="footer-img">
+                    <img src="assets/images/footer-img.jpg" alt="" srcset="">
+                </div>
             </div>
         </div>
         
-    </section>
-<!-- Ski-Map -->
-    <section class="ski-map">
-    <div class="ski-map-conatainer">
-        <div class="social-media">
-            <div class="register">
-                <input type="button" value="SIGN UP">
-                <input type="checkbox" name="check" id="">I have read and agree to the <span>terms & conditions</span> 
-            </div>
-            <div class="icons">
-                <div class="sm-icon">1</div>
-                <div class="sm-icon">2</div>
-                <div class="sm-icon">3</div>
-                <div class="sm-icon">4</div>
-            </div>
-        </div>
-    </div>
+        
     </section>
     <!-- Footer -->
     <section class="footer">
@@ -271,7 +286,7 @@
                 </ul>
             </div>
         </div>
-        <div class="foter-end">
+        <div class="footer-end">
             <p><span>AncoraThemes</span>© 2023. All Rights Reserved.</p>
         </div>
     </section>

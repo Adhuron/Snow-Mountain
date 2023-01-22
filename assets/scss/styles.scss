@@ -567,5 +567,27 @@ flex-direction: column;
 
  @media only screen and (max-width: 768px) {
 
-
+    .about-us-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .secret-season{
+        height: auto;
+        background-size: cover;
+        padding: 20px 0;
+    }
+    .snow-mountain-wrapper .snow-mountain-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .season-passes-wrapper{
+        height: auto !important;
+    }
+    .gallery .gallery-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery .photo{
+        width: auto;
+    }
   }
